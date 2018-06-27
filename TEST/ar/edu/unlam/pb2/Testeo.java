@@ -12,17 +12,16 @@ public class Testeo {
 		Double esperado=4.0;
 		assertEquals(esperado, miCalculadora.Dividir(20.0, 5.0),2);
 	}
-	/*@Test
+	@Test
 	public void testDividir1(){
 		Calculadora miCalculadora = new Calculadora();
 		Double esperado=4.0;
-		try {
+		try { //Especie de if "intenta ejecutar esto"
 			assertEquals(esperado, miCalculadora.Dividir(20.0, 5.0),2);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Exception e) { //si se produce una excepción, ejecuta esto
+			System.out.println(e.getMessage());
 		}
-	}*/
+	}
 	@Test
 	(expected=Exception.class)
 	public void testQueVerifiqueQueLanceUnaException() throws Exception {
